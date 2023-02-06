@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Lato:ital,wght@0,100;1,100&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'lato';
+}
+
+.toggle-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  border-radius: 10px;
+}
