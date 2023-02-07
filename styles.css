@@ -19,6 +19,10 @@ header {
   height: 70px;
 }
 
+header .nav-container {
+  display: none;
+}
+
 .toggle-btn {
   display: flex;
   flex-direction: column;
@@ -90,6 +94,7 @@ header {
   background-color: #282b32;
   color: whitesmoke;
   gap: 10px;
+  padding: 0 150px;
 }
 
 .main-program h4 {
@@ -109,9 +114,15 @@ header {
   background-color: rgba(71, 72, 73, 0.502);
 }
 
+.programs p {
+  line-height: 25px;
+  width: 50%;
+}
+
 .main-program h5 {
   font-size: 18px;
   color: rgb(230, 127, 10);
+  width: 20%;
 
 }
 
@@ -122,6 +133,9 @@ header {
   background-color: hwb(21 1% 33%);
 }
 
+.main-program .all-work {
+  display: none;
+}
 /* Featured Speakers section  */
 
 #featured-speakers {
@@ -143,7 +157,8 @@ header {
 #featured-speakers .about-speakers {
   display: grid;
   grid-template: auto auto auto / auto auto;
-  gap: 30px;
+  gap: 10px;
+  column-gap: 25px; 
   font-weight: 600;
   justify-content: center;
   align-items: center;
@@ -155,6 +170,10 @@ header {
 
 .about-speakers .pink {
   color: rgb(230, 10, 10);
+}
+
+.partners {
+  display: none;
 }
 
 /* styling the about html file  */
@@ -196,6 +215,9 @@ header {
   background-color: white;
 }
 
+#home-about .about-course-dskt {
+  display: none;
+}
 
 #home-about .contact {
   margin: 10px 80px;
@@ -218,9 +240,13 @@ header {
   padding: 10px;
 }
 
-#about-logo p {
+#about-logo .logo-mob {
   margin: 0 70px;
   line-height: 26px;
+}
+
+#about-logo .logo-dskt {
+  display: none;
 }
 
 #about-time {
@@ -295,7 +321,8 @@ header {
 }
 
 #footer {
-  display: flex;
+  /* display: flex; */
+  display: none;
   font-weight: 600;
   gap: 30px;
   height: 15vh;
@@ -318,4 +345,194 @@ header {
   width: 50px;
   height: 2px;
   background-color: red;
+}
+
+@media (min-width: 768px) {
+  
+  /* Header of the website  */
+
+  .toggle-btn {
+    display: none;
+  }
+
+  header .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+  }
+
+  .nav-container #logo-link {
+    width: 200px;
+  }
+
+  .nav-container #logo {
+    width: 100%;
+  }
+
+  .nav-container .navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+
+  .navbar li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+
+  .navbar .campaign {
+    border: 1px solid red;
+    padding: 8px 16px;
+  }
+
+/* main section of the website  */
+
+#home {
+  align-items: flex-start;
+  font-family: sans-serif;
+  padding-left: 150px;
+  height: 70vh;
+}
+
+#home h3 {
+  font-size: 24px;
+}
+
+#home h1 {
+  font-size: 75px;
+  text-align: left;
+  padding-right: 140px;
+}
+
+#home .course-description {
+  margin-right: 200px;
+}
+
+.main-program .flex-container {
+  display: flex;
+  gap: 5px;
+}
+
+.flex-container .programs {
+  text-align: center;
+  flex-direction: column;
+  width: 20%;
+}
+
+.main-program .join {
+  display: none;
+}
+
+.main-program .all-work {
+  display: block;
+  color: white;
+  text-decoration: underline;
+  margin: 70px;
+}
+
+/* About Featured Speakers  */
+
+#featured-speakers {
+  display: grid;
+  grid-template: 100px repeat(3, 1fr) / 1fr 1fr;
+  padding: 0 200px;
+}
+
+#featured-speakers h4 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.partners {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template: 100px 20px 100px / repeat(5, 100px);
+  background-color: #414246;
+}
+
+#footer {
+  display: flex;
+}
+
+#home-about {
+  gap: 40px;
+  font-family: sans-serif;
+}
+
+#home-about #about-us {
+  padding: 100px;
+}
+
+#home-about h3 {
+  font-size: 30px;
+}
+
+#home-about h1 {
+  font-size: 70px;
+}
+
+#home-about .about-course {
+  display: none;
+}
+
+#home-about .about-course-dskt {
+  display: block;
+  margin: 35px 200px;
+  padding: 35px 25px;
+  border-radius: 5px;
+  line-height: 28px;
+  background-color: white;
+  font-weight: 400;
+}
+
+#home-about .contact {
+  margin: 0 400px;
+}
+
+#home-about .contact strong {
+  font-weight: bolder;
+}
+
+/* about the logo of the udemy website  */
+
+#about-logo h3 {
+  font-size: 45px;
+}
+
+#about-logo .logo-mob {
+  display: none;
+}
+
+#about-logo .logo-dskt {
+  display: block;
+  margin: 0 300px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+ /* about the last two courses of udemy */
+
+ #past-courses img {
+  width: 40%;
+  height: 380px;
+ }
+
+ #home-about .partners {
+  display: none;
+ }
+
+ #footer {
+  background-color: #2e2e2e;
+  color: white;
+ }
+
+ #footer h5 {
+  color: white;
+ }
 }
