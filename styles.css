@@ -40,6 +40,35 @@ header .nav-container {
   background-color: black;
   border-radius: 10px;
 }
+#hamburger-menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  font-weight: 400;
+  font-family: sans-serif;
+  position: fixed;
+  background-color: white;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 40px; 
+  padding: 40px;
+}
+
+  .hamburger-menu li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.close-btn {
+  float: right;
+  font-size: 40px;
+  margin: 20px;
+}
 
  /* The home page of the project  */
 
@@ -110,7 +139,7 @@ header .nav-container {
   font-weight: 600;
   gap: 20px;
   padding: 15px 10px;
-  margin: 0 10px;
+  margin: 10px;
   background-color: rgba(71, 72, 73, 0.502);
 }
 
@@ -131,6 +160,8 @@ header .nav-container {
   padding: 20px 35px;
   margin: 25px;
   background-color: hwb(21 1% 33%);
+  width: 300px;
+  text-align: center;
 }
 
 .main-program .all-work {
@@ -250,12 +281,16 @@ header .nav-container {
 }
 
 #about-time {
-  border: 1px solid grey;
-  margin: 30px 40px;
   padding: 40px;
 }
 
-#about-time h2 {
+#about-time img {
+  border: 1px solid grey;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+/* #about-time h2 {
   font-family: sans-serif;
   font-size: 35px;
 }
@@ -264,7 +299,7 @@ header .nav-container {
   font-size: 13px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-}
+} */
 
 #past-courses {
   border-top: 1px solid grey;
@@ -446,6 +481,7 @@ header .nav-container {
 
 #featured-speakers h4 {
   grid-area: 1 / 1 / 2 / 3;
+  font-size: 35px;
 }
 
 .partners {
@@ -492,7 +528,7 @@ header .nav-container {
 }
 
 #home-about .contact {
-  margin: 0 400px;
+  margin: 0 100px;
 }
 
 #home-about .contact strong {
@@ -514,6 +550,12 @@ header .nav-container {
   margin: 0 300px;
   line-height: 36px;
   font-weight: 400;
+}
+
+#about-time img {
+  border: 1px solid grey;
+  width: 60%;
+  padding: 60px 100px;
 }
 
  /* about the last two courses of udemy */
