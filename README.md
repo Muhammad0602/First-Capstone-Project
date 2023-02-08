@@ -53,13 +53,13 @@ This is the first capstone project in Microverse. The project is about an online
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://muhammad0602.github.io/Portfolio-mobile-first/)
+- [Live Demo Link](https://muhammad0602.github.io/First-Capstone-Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-### Before doing anything, I would recommend you to watch this video to get a better understanding of this project.
+### Here is a quick description of the project.
 
    https://www.loom.com/share/f1235440c84247f4846005e6717ccbe6
 
@@ -111,7 +111,7 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 
-If you like this project kindly follow me in github, and leave a ⭐ for this project.
+If you like this project kindly follow me in github, and leave a ⭐ for the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
