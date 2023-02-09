@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'lato';
+  font-family: 'lato ', sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
@@ -169,7 +169,7 @@ header .nav-container {
   color: white;
   padding: 20px 35px;
   margin: 25px;
-  background-color: hwb(21 1% 33%);
+  background-color: #ab3d03;
   width: 300px;
   text-align: center;
 }
@@ -351,10 +351,6 @@ header .nav-container {
 
 .partners .partner-logo {
   width: 100px;
-
-  /* height: 80px; */
-  background-color: none;
-  background-image: none !important;
 }
 
 .partners .item0 {
