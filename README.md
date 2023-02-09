@@ -61,7 +61,7 @@ This is the first capstone project in Microverse. The project is about an online
 
 ### Here is a quick description of the project.
 
-   https://www.loom.com/share/f1235440c84247f4846005e6717ccbe6
+   [Visit loom](https://www.loom.com/share/bae3fea941784c698c98e9af1bcc75ae)
 
 To get a local copy up and running, follow these steps.
 
@@ -120,7 +120,7 @@ If you like this project kindly follow me in github, and leave a ⭐ for the pro
 
 
 - I would like to thank everyone who helped me to finish this project, without whom it would be very difficult.
-- The design of this project was taken from a creative designer `Cindy Shin`. You can visit her profile here [Link](https://www.behance.net/adagio07)
+- The original design is made by a creative designer `Cindy Shin`. You can visit her profile here [Link](https://www.behance.net/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
