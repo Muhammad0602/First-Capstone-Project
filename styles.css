@@ -129,6 +129,7 @@ header .nav-container {
 .main-program h4 {
   font-size: 22px;
   margin: 40px;
+  margin-bottom: 20px;
   font-family: sans-serif;
 }
 
@@ -322,7 +323,7 @@ header .nav-container {
 
 #home-about .partners {
   display: grid;
-  grid-template: 70px 0 1fr 1fr / repeat(3, auto);
+  grid-template: 70px 10px 100px 100px / repeat(3, auto);
   text-align: center;
   justify-content: space-around;
   align-items: center;
@@ -367,19 +368,45 @@ header .nav-container {
   margin-bottom: 20px;
 }
 
-#footer h5 {
+/* #footer h5 {
   font-weight: 700;
   font-size: 20px;
   margin-left: 50px;
   color: rgb(3, 3, 3);
   font-family: sans-serif;
+} */
+
+#footer img {
+  width: 20%;
 }
+
+#footer-about {
+  display: flex;
+  font-weight: 600;
+  gap: 30px;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#footer-about img {
+  width: 25%;
+}
+
+#footer-about p {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 400;
+ }
 
  /* underline for all elements   */
 .underline {
   width: 50px;
   height: 2px;
   background-color: red;
+  margin: 10px auto;
 }
 
 @media (min-width: 768px) {
@@ -488,12 +515,32 @@ header .nav-container {
   display: grid;
   justify-content: space-evenly;
   align-items: center;
-  grid-template: 100px 20px 100px / repeat(5, 100px);
+  grid-template: 80px 10px 100px / repeat(5, 100px);
   background-color: #414246;
+  padding-bottom: 40px;
 }
 
 #footer {
   display: flex;
+}
+
+#footer p {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.partners .item0 {
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+.partners .item1 {
+  grid-area: 2 / 1 / 3 / 6;
+}
+
+.partners .item6 {
+  grid-area: 3 / 5 / 4 / 6;
 }
 
 #home-about {
@@ -569,12 +616,13 @@ header .nav-container {
   display: none;
  }
 
- #footer {
+ #footer-about {
   background-color: #2e2e2e;
+  color: white;
+  margin-top: 50px;
+ }
+ #footer-about p {
   color: white;
  }
 
- #footer h5 {
-  color: white;
- }
 }
