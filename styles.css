@@ -16,7 +16,10 @@ body {
 
 header {
   background-color:whitesmoke;
-  height: 70px;
+}
+
+header .nav {
+  display: none;
 }
 
 header .nav-container {
@@ -236,7 +239,7 @@ header .nav-container {
   font-size: 40px;
   font-weight: 700;
   font-family: sans-serif;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 #home-about .about-course {
@@ -415,6 +418,22 @@ header .nav-container {
 
   .toggle-btn {
     display: none;
+  }
+
+  header .nav {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    background-color: #414246;
+    gap: 40px;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: white;
   }
 
   header .nav-container {
