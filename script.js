@@ -66,12 +66,13 @@ speakersArray.forEach(
   (speaker) => {
     const featuredSpeakers = `
     
-       <div class="about-speakers">
-        <img class="face" src=${speaker.face} alt="Yochai Benkler's face/picture">
+       <section class="about-speakers">
+        <img class="face" src=${speaker.face} alt=${speaker.name}'s face/picture">
          <h3>${speaker.name}</h3>
          <p class="pink">${speaker.job}</p>
+         <div class="line"></div>
          <p>${speaker.about}</p>
-       </div>  `;
+       </section>  `;
     speakers.innerHTML += featuredSpeakers;
   },
 );
