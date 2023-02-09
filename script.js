@@ -2,12 +2,6 @@ const hamburger = document.querySelector('.toggle-btn');
 const closeBtn = document.querySelector('.close-btn');
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 const speakers = document.querySelector('#featured-speakers');
-// const footer = document.querySelector('#footer');
-// const about = document.querySelector('#about');
-
-// about.addEventListener('click', () => {
-//     footer.style.display = 'flex';
-// })
 
 hamburger.addEventListener('click', () => {
   hamburgerMenu.style.display = 'block';
@@ -67,9 +61,6 @@ const speakersArray = [
 const text = document.createElement('h4');
 text.textContent = 'Featured Speakers';
 speakers.append(text);
-// const underline = document.createElement('div');
-//   underline.className = 'underline';
-//   speakers.append(underline)
 
 speakersArray.forEach(
   (speaker) => {
@@ -81,11 +72,6 @@ speakersArray.forEach(
          <p class="pink">${speaker.job}</p>
          <p>${speaker.about}</p>
        </div>  `;
-
-    //  speakers.insertAdjacentElement ('beforeend', featuredSpeakers);
     speakers.innerHTML += featuredSpeakers;
-    // speakers.style.height = '100vh';
   },
 );
-
-//    <h4>Featured Speakers</h4>
