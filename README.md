@@ -120,6 +120,7 @@ If you like this project kindly follow me in github, and leave a ⭐ for the pro
 
 
 I would like to thank everyone who helped me to finish this project, without whom it would be very difficult.
+The design of this project was taken from a creative designer `Cindy Shin`. You can visit her profile https://www.behance.net/adagio07
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
