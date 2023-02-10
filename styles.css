@@ -144,7 +144,6 @@ header .nav-container {
   align-items: center;
   background-color: #282b32;
   color: whitesmoke;
-  gap: 10px;
 }
 
 .main-program h4 {
@@ -172,6 +171,10 @@ header .nav-container {
   margin: 10px;
   background-color: rgba(71, 72, 73, 0.502);
   width: 100%;
+}
+
+.programs:hover {
+  border: 3px solid white;
 }
 
 .programs .align {
@@ -369,6 +372,30 @@ header .nav-container {
 #past-courses img {
   width: 80%;
   margin-bottom: 20px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(30, 153, 206, 0.6);
+  top: 0%;
+  left: 10%;
+  height: 45%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay-york {
+  top: 50%;
+  height: 45%;
+}
+
+#past-courses .overlay p {
+  margin: 10px;
 }
 
 #home-about .partners {
@@ -428,6 +455,7 @@ header .nav-container {
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
+  padding-left: 50px;
 }
 
 #footer-about img {
@@ -446,6 +474,10 @@ header .nav-container {
   height: 2px;
   background-color: red;
   margin: 10px auto;
+}
+
+.images {
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -503,6 +535,9 @@ header .nav-container {
     color: black;
     font-size: 15px;
   }
+  .navbar li a:hover {
+    color:#e67f0a;
+  }
 
   .navbar .campaign {
     border: 1px solid red;
@@ -535,7 +570,6 @@ header .nav-container {
   .main-program .flex-container {
     display: flex;
     flex-direction: row;
-    gap: 5px;
   }
 
   .flex-container .programs {
@@ -683,6 +717,21 @@ header .nav-container {
   #past-courses img {
     width: 40%;
     height: 380px;
+    margin: 10px;
+  }
+
+  .overlay {
+    width: 40%;
+    height: 94%;
+    left: 9.1%;
+    top: 2.6%;
+  }
+
+  .overlay-york {
+    width: 40%;
+    height: 94%;
+    left: 50.9%;
+    top: 2.6%;;
   }
 
   #home-about .partners {
