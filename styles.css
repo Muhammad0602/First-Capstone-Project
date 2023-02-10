@@ -265,10 +265,6 @@ header .nav-container {
   background-color: white;
   display: flex;
   flex-direction: column;
-
-  /* justify-content: center; */
-
-  /* align-items: center; */
   margin: 0 auto;
 }
 
@@ -313,10 +309,6 @@ header .nav-container {
   font-family: sans-serif;
 }
 
-/* #about-logo {
-  background-color: white;
-} */
-
 #about-logo h3 {
   font-family: sans-serif;
   font-weight: 400;
@@ -344,17 +336,6 @@ header .nav-container {
   padding: 30px 50px;
 }
 
-/* #about-time h2 {
-  font-family: sans-serif;
-  font-size: 35px;
-}
-
-#about-time p {
-  font-size: 13px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-} */
-
 #past-courses {
   border-top: 1px solid grey;
 }
@@ -377,7 +358,7 @@ header .nav-container {
 
 .overlay {
   position: absolute;
-  background-color: rgba(30, 153, 206, 0.6);
+  background-color: rgba(247, 12, 12, 0.6);
   top: 0%;
   left: 10%;
   height: 45%;
