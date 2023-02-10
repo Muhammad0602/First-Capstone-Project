@@ -394,6 +394,12 @@ header .nav-container {
   height: 45%;
 }
 
+#footer-about p {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
 #past-courses .overlay p {
   margin: 10px;
 }
@@ -460,12 +466,6 @@ header .nav-container {
 
 #footer-about img {
   width: 25%;
-}
-
-#footer-about p {
-  color: black;
-  font-family: sans-serif;
-  font-weight: 400;
 }
 
 /* underline for all elements   */
@@ -535,8 +535,9 @@ header .nav-container {
     color: black;
     font-size: 15px;
   }
+
   .navbar li a:hover {
-    color:#e67f0a;
+    color: #e67f0a;
   }
 
   .navbar .campaign {
@@ -731,7 +732,7 @@ header .nav-container {
     width: 40%;
     height: 94%;
     left: 50.9%;
-    top: 2.6%;;
+    top: 2.6%;
   }
 
   #home-about .partners {
