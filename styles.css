@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Lato:ital,wght@0,100;1,100&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'lato ', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Creating the hamburger button  */
+
+header {
+  background-color: whitesmoke;
+}
+
+.home-header {
+  background-image: url('https://www.blogenium.com/wp-content/uploads/2019/08/blogenium-cool-technologies-wallpapers-15.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-header {
+  background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-03/1614791986_122-p-fon-dlya-delovoi-prezentatsii-129.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .nav {
+  display: none;
+}
+
+header .nav-container {
+  display: none;
+}
+
+.toggle-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 15px;
+  left: 25px;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#hamburger-menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  font-weight: 400;
+  font-family: sans-serif;
+  position: fixed;
+  background-color: white;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 40px;
+  padding: 40px;
+}
+
+.hamburger-menu li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.close-btn {
+  float: right;
+  font-size: 40px;
+  margin: 20px;
+}
+
+/* The home page of the project  */
+
+#home {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.blogenium.com/wp-content/uploads/2019/08/blogenium-cool-technologies-wallpapers-15.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home h3 {
+  color: rgb(238, 7, 7);
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+#home h1 {
+  color: rgba(247, 12, 12, 0.991);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#home .course-description {
+  font-weight: 700;
+  margin: 20px 25px;
+  padding: 15px;
+  border: 5px solid white;
+  line-height: 27px;
+}
+
+#home .time {
+  font-size: 30px;
+  color: #000;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+#home .course-location {
+  font-size: 20px;
+}
+
+/* The about page of the project. Main program  */
+
+#about .main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282b32;
+  color: whitesmoke;
+}
+
+.main-program h4 {
+  font-size: 22px;
+  margin: 30px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.main-program .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.main-program .programs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  gap: 40px;
+  padding: 10px 0;
+  margin: 10px;
+  background-color: rgba(71, 72, 73, 0.502);
+  width: 100%;
+}
+
+.programs:hover {
+  border: 3px solid white;
+}
+
+.programs .align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 35%;
+  padding-left: 25px;
+}
+
+.programs p {
+  max-width: 55%;
+  line-height: 25px;
+}
+
+.main-program h5 {
+  font-size: 18px;
+  color: rgb(230, 127, 10);
+}
+
+.main-program .join {
+  color: white;
+  padding: 20px 35px;
+  margin: 25px;
+  background-color: #ab3d03;
+  width: 300px;
+  text-align: center;
+}
+
+.main-program .all-work {
+  display: none;
+}
+
+/* Featured Speakers section  */
+
+#featured-speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+#featured-speakers h4 {
+  text-align: center;
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 25px;
+  text-shadow: 0.5px 0 black;
+}
+
+#featured-speakers .about-speakers {
+  display: grid;
+  grid-template: auto auto auto auto / auto auto;
+  gap: 10px;
+  column-gap: 25px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-speakers .face {
+  grid-area: 1 / 1 / 5 / 2;
+}
+
+.about-speakers .pink {
+  color: rgb(230, 10, 10);
+}
+
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: #d5d3d3;
+  border-radius: 10px;
+}
+
+.partners {
+  display: none;
+}
+
+/* styling the about html file  */
+
+#home-about {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#home-about #about-us {
+  background-color: whitesmoke;
+  background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-03/1614791986_122-p-fon-dlya-delovoi-prezentatsii-129.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-about .hello {
+  color: rgb(238, 7, 7);
+  font-weight: 700;
+}
+
+#home-about h1 {
+  color: rgba(247, 12, 12, 0.991);
+  font-size: 40px;
+  font-weight: 700;
+  font-family: sans-serif;
+  margin-top: 100px;
+}
+
+#home-about .about-course {
+  margin: 35px;
+  padding: 25px 15px;
+  border-radius: 5px;
+  line-height: 28px;
+  background-color: white;
+}
+
+#home-about .about-course-dskt {
+  display: none;
+}
+
+#home-about .contact {
+  margin: 10px 80px;
+  line-height: 25px;
+}
+
+.contact strong {
+  font-family: sans-serif;
+}
+
+#about-logo h3 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 30px 100px;
+  padding: 10px;
+}
+
+#about-logo .logo-mob {
+  margin: 0 70px;
+  line-height: 26px;
+}
+
+#about-logo .logo-dskt {
+  display: none;
+}
+
+#about-time {
+  padding: 40px;
+}
+
+#about-time img {
+  border: 1px solid grey;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+#past-courses {
+  border-top: 1px solid grey;
+}
+
+#past-courses h3 {
+  font-family: sans-serif;
+  font-size: 22px;
+  margin: 25px 50px;
+}
+
+#past-courses p {
+  margin: 25px 40px;
+}
+
+#past-courses img {
+  width: 80%;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(247, 12, 12, 0.6);
+  top: 0%;
+  left: 10%;
+  height: 45%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay-york {
+  top: 50%;
+  height: 45%;
+}
+
+#footer-about p {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+#past-courses .overlay p {
+  margin: 10px;
+}
+
+#home-about .partners {
+  display: grid;
+  grid-template: 70px 10px 100px 100px / repeat(3, auto);
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #414246;
+  margin: 20px 0;
+}
+
+.partners h2 {
+  color: white;
+  font-size: 28px;
+}
+
+.partners .partner-logo {
+  width: 100px;
+}
+
+.partners .item0 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.partners .item1 {
+  grid-area: 2 / 1 / 3 / 4;
+  margin: 0 auto;
+}
+
+.partners .item6 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+#footer {
+  display: flex;
+  font-weight: 400;
+  gap: 30px;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+#footer img {
+  width: 30%;
+}
+
+#footer-about {
+  display: flex;
+  font-weight: 600;
+  gap: 30px;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+
+#footer-about img {
+  width: 25%;
+}
+
+/* underline for all elements   */
+.underline {
+  width: 50px;
+  height: 2px;
+  background-color: red;
+  margin: 10px auto;
+}
+
+.images {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  /* Header of the website  */
+
+  .toggle-btn {
+    display: none;
+  }
+
+  header .nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    background-color: #414246;
+    gap: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding-right: 15%;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+  }
+
+  .nav-container #logo-link {
+    width: 200px;
+  }
+
+  .nav-container #logo {
+    width: 100%;
+  }
+
+  .nav-container .navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+
+  .navbar li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+
+  .navbar li a:hover {
+    color: #e67f0a;
+  }
+
+  .navbar .campaign {
+    border: 1px solid red;
+    padding: 8px 16px;
+  }
+
+  /* main section of the website  */
+
+  #home {
+    align-items: flex-start;
+    font-family: sans-serif;
+    padding-left: 150px;
+    height: 70vh;
+  }
+
+  #home h3 {
+    font-size: 24px;
+  }
+
+  #home h1 {
+    font-size: 75px;
+    text-align: left;
+    padding-right: 140px;
+  }
+
+  #home .course-description {
+    margin-right: 200px;
+  }
+
+  .main-program .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-container .programs {
+    text-align: center;
+    flex-direction: column;
+    width: 15%;
+    height: 260px;
+    gap: 0;
+  }
+
+  .programs .align {
+    flex-direction: column;
+    min-width: 0;
+    max-width: 100%;
+    height: 50%;
+    padding: 0;
+  }
+
+  .programs p {
+    max-width: 100%;
+    min-width: 0;
+    height: 60%;
+    line-height: 22px;
+  }
+
+  .main-program .join {
+    display: none;
+  }
+
+  .main-program .all-work {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    margin: 70px;
+  }
+
+  /* About Featured Speakers  */
+
+  #featured-speakers {
+    display: grid;
+    grid-template: 100px repeat(3, 1fr) / 1fr 1fr;
+    padding: 0 200px;
+  }
+
+  #featured-speakers h4 {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 35px;
+  }
+
+  .partners {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template: 80px 10px 100px / repeat(5, 100px);
+    background-color: #414246;
+    padding-bottom: 40px;
+  }
+
+  #footer img {
+    width: 15%;
+  }
+
+  #footer p {
+    color: black;
+    font-family: sans-serif;
+  }
+
+  .partners .item0 {
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 6;
+  }
+
+  .partners .item1 {
+    grid-area: 2 / 1 / 3 / 6;
+  }
+
+  .partners .item6 {
+    grid-area: 3 / 5 / 4 / 6;
+  }
+
+  #home-about {
+    gap: 40px;
+    font-family: sans-serif;
+  }
+
+  #home-about #about-us {
+    padding: 100px;
+  }
+
+  #home-about h3 {
+    font-size: 30px;
+  }
+
+  #home-about h1 {
+    font-size: 70px;
+  }
+
+  #home-about .about-course {
+    display: none;
+  }
+
+  #home-about .about-course-dskt {
+    display: block;
+    margin: 35px 200px;
+    padding: 35px 25px;
+    border-radius: 5px;
+    line-height: 28px;
+    background-color: white;
+    font-weight: 400;
+  }
+
+  #home-about .contact {
+    margin: 0 100px;
+  }
+
+  #home-about .contact strong {
+    font-weight: bolder;
+  }
+
+  /* about the logo of the udemy website  */
+
+  #about-logo h3 {
+    font-size: 45px;
+  }
+
+  #about-logo .logo-mob {
+    display: none;
+  }
+
+  #about-logo .logo-dskt {
+    display: block;
+    margin: 0 300px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
+  #about-time img {
+    border: 1px solid grey;
+    width: 60%;
+    padding: 60px 100px;
+  }
+
+  /* about the last two courses of udemy */
+
+  #past-courses img {
+    width: 40%;
+    height: 380px;
+    margin: 10px;
+  }
+
+  .overlay {
+    width: 40%;
+    height: 94%;
+    left: 9.1%;
+    top: 2.6%;
+  }
+
+  .overlay-york {
+    width: 40%;
+    height: 94%;
+    left: 50.9%;
+    top: 2.6%;
+  }
+
+  #home-about .partners {
+    display: none;
+  }
+
+  #footer-about {
+    background-color: #2e2e2e;
+    color: white;
+    margin-top: 100px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+  }
+
+  #footer-about img {
+    width: 20%;
+  }
+
+  #footer-about p {
+    color: white;
+  }
+}
