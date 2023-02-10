@@ -61,7 +61,7 @@ This is the first capstone project in Microverse. The project is about an online
 
 ### Here is a quick description of the project.
 
-   [Visit loom](https://www.loom.com/share/bae3fea941784c698c98e9af1bcc75ae)
+   [Visit loom](https://www.loom.com/share/37d746b955c04772b1f098d4edf9ad65)
 
 To get a local copy up and running, follow these steps.
 
